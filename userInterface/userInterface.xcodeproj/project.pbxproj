@@ -14,6 +14,9 @@
 		109756691A86A1D000CA5453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109756681A86A1D000CA5453 /* Images.xcassets */; };
 		1097566C1A86A1D100CA5453 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097566A1A86A1D100CA5453 /* LaunchScreen.xib */; };
 		109756781A86A1D100CA5453 /* userInterfaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109756771A86A1D100CA5453 /* userInterfaceTests.m */; };
+		1098B76E1A8885D90073FD95 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */; };
+		1098B7701A8885F70073FD95 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B76F1A8885F70073FD95 /* libstdc++.dylib */; };
+		1098B7721A8886110073FD95 /* FLIROneSDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B7711A8886110073FD95 /* FLIROneSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		109756711A86A1D100CA5453 /* userInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		109756761A86A1D100CA5453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109756771A86A1D100CA5453 /* userInterfaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userInterfaceTests.m; sourceTree = "<group>"; };
+		1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../../../../FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
+		1098B76F1A8885F70073FD95 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		1098B7711A8886110073FD95 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../../../../FLIROneSDK/FLIROneSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1098B7721A8886110073FD95 /* FLIROneSDK.bundle in Frameworks */,
+				1098B7701A8885F70073FD95 /* libstdc++.dylib in Frameworks */,
+				1098B76E1A8885D90073FD95 /* FLIROneSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		1097564F1A86A1CE00CA5453 = {
 			isa = PBXGroup;
 			children = (
+				1098B7711A8886110073FD95 /* FLIROneSDK.bundle */,
+				1098B76F1A8885F70073FD95 /* libstdc++.dylib */,
+				1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */,
 				1097565A1A86A1D000CA5453 /* userInterface */,
 				109756741A86A1D100CA5453 /* userInterfaceTests */,
 				109756591A86A1CF00CA5453 /* Products */,
@@ -345,8 +357,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/NatalyMoreno/Documents/Code/Winter,
+					2015/MobileImaging/FLIROneSDK,
+				);
 				INFOPLIST_FILE = userInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -355,8 +373,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/NatalyMoreno/Documents/Code/Winter,
+					2015/MobileImaging/FLIROneSDK,
+				);
 				INFOPLIST_FILE = userInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +438,7 @@
 				1097567D1A86A1D100CA5453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1097567E1A86A1D100CA5453 /* Build configuration list for PBXNativeTarget "userInterfaceTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +447,7 @@
 				109756801A86A1D100CA5453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
