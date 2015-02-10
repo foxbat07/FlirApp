@@ -10,7 +10,7 @@
 
 #import <FLIROneSDK/FLIROneSDK.h>
 
-@interface ViewController : UIViewController <FLIROneSDKImageReceiverDelegate, FLIROneSDKStreamManagerDelegate>
+@interface ViewController : UIViewController //<FLIROneSDKImageReceiverDelegate, FLIROneSDKStreamManagerDelegate>
 
 @end
 
