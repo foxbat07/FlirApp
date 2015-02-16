@@ -14,10 +14,10 @@
 		109756691A86A1D000CA5453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109756681A86A1D000CA5453 /* Images.xcassets */; };
 		1097566C1A86A1D100CA5453 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097566A1A86A1D100CA5453 /* LaunchScreen.xib */; };
 		109756781A86A1D100CA5453 /* userInterfaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109756771A86A1D100CA5453 /* userInterfaceTests.m */; };
-		1098B76E1A8885D90073FD95 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */; };
-		1098B7701A8885F70073FD95 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B76F1A8885F70073FD95 /* libstdc++.dylib */; };
 		1098B7751A898ACE0073FD95 /* FlirOneSDKOurMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1098B7741A898ACE0073FD95 /* FlirOneSDKOurMainViewController.m */; };
-		1098B7791A89933E0073FD95 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1098B7781A89933E0073FD95 /* FLIROneSDK.bundle */; };
+		1098B77C1A9017650073FD95 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1098B77B1A9017650073FD95 /* FLIROneSDK.bundle */; };
+		1098B7821A90182C0073FD95 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B7811A90182C0073FD95 /* FLIROneSDK.framework */; };
+		1098B7841A9018730073FD95 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1098B7831A9018730073FD95 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +44,11 @@
 		109756711A86A1D100CA5453 /* userInterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userInterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		109756761A86A1D100CA5453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109756771A86A1D100CA5453 /* userInterfaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userInterfaceTests.m; sourceTree = "<group>"; };
-		1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../../../../FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
-		1098B76F1A8885F70073FD95 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		1098B7731A898ACE0073FD95 /* FlirOneSDKOurMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlirOneSDKOurMainViewController.h; sourceTree = "<group>"; };
 		1098B7741A898ACE0073FD95 /* FlirOneSDKOurMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlirOneSDKOurMainViewController.m; sourceTree = "<group>"; };
-		1098B7781A89933E0073FD95 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
+		1098B77B1A9017650073FD95 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../FLIROneSDK.bundle; sourceTree = "<group>"; };
+		1098B7811A90182C0073FD95 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
+		1098B7831A9018730073FD95 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1098B7701A8885F70073FD95 /* libstdc++.dylib in Frameworks */,
-				1098B76E1A8885D90073FD95 /* FLIROneSDK.framework in Frameworks */,
+				1098B7841A9018730073FD95 /* libstdc++.dylib in Frameworks */,
+				1098B7821A90182C0073FD95 /* FLIROneSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 		1097565B1A86A1D000CA5453 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1098B7781A89933E0073FD95 /* FLIROneSDK.bundle */,
+				1098B77B1A9017650073FD95 /* FLIROneSDK.bundle */,
 				1097565C1A86A1D000CA5453 /* Info.plist */,
 				1097565D1A86A1D000CA5453 /* main.m */,
 			);
@@ -137,8 +137,8 @@
 		1098B77A1A89942B0073FD95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1098B76F1A8885F70073FD95 /* libstdc++.dylib */,
-				1098B76D1A8885D90073FD95 /* FLIROneSDK.framework */,
+				1098B7831A9018730073FD95 /* libstdc++.dylib */,
+				1098B7811A90182C0073FD95 /* FLIROneSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1098B77C1A9017650073FD95 /* FLIROneSDK.bundle in Resources */,
 				109756671A86A1D000CA5453 /* Main.storyboard in Resources */,
 				1097566C1A86A1D100CA5453 /* LaunchScreen.xib in Resources */,
-				1098B7791A89933E0073FD95 /* FLIROneSDK.bundle in Resources */,
 				109756691A86A1D000CA5453 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +376,7 @@
 					"$(inherited)",
 					/Users/NatalyMoreno/Documents/Code/Winter,
 					2015/MobileImaging/FLIROneSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = userInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -392,6 +393,7 @@
 					"$(inherited)",
 					/Users/NatalyMoreno/Documents/Code/Winter,
 					2015/MobileImaging/FLIROneSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = userInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

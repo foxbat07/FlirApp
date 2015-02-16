@@ -31,7 +31,7 @@
 	// Dispose of any resources that can be recreated.
 }
 
-/*- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager
+- (void)FLIROneSDKDelegateManager:(FLIROneSDKDelegateManager *)delegateManager
  didReceiveBlendedMSXRGBA8888Image:(NSData *)msxImage imageSize:(CGSize)size {
 	//render the image
 	UIImage *image = [FLIROneSDKUIImage
@@ -42,5 +42,5 @@
 	});
 	
 }
-*/
+
 @end
