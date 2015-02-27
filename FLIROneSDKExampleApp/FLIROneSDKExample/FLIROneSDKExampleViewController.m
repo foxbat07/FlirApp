@@ -5,6 +5,8 @@
 //  Created by Joseph Colicchio on 5/22/14.
 //  Copyright (c) 2014 novacoast. All rights reserved.
 //
+//  Modified by Nataly Moreno on 2/23/14.
+//
 
 #import "FLIROneSDKExampleViewController.h"
 
@@ -14,8 +16,16 @@
 
 #import <FLIROneSDK/FLIROneSDKUIImage.h>
 
+#import "ScanOverViewController.h"
+
+#define ROUND_BUTTON_RADIUS 50
 
 @interface FLIROneSDKExampleViewController ()
+
+//Additions to UI
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+@property (nonatomic) UIColor *border_color;
 
 //The main viewfinder for the FLIR ONE
 @property (weak, nonatomic) IBOutlet UIView *masterImageView;
@@ -151,7 +161,20 @@
     self.coldestPoint.alpha = 0.5;
     self.coldestLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     [self.masterImageView addSubview:self.coldestLabel];
-    
+	
+	//My Modifications to UI Stuff
+	[self.titleLabel setText:self.chosen_scan_mode];
+	
+	self.border_color = [[UIColor alloc] initWithRed: 65.0 / 255.0
+											   green: 120.0 / 255.0
+												blue: 219.0 / 255.0
+											   alpha: 1.0];
+	
+	//Set Up the Back Button
+	self.backButton = [self makeCircularButton:self.backButton withImage:@"big_backArrow.png" atXLoc:210 atYLoc:480];
+	[self.backButton addTarget:self action:@selector(goToScanOverview:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:self.backButton];
+	
     //center of screen, half width half height, offset by width/4, height/4
     self.regionOfInterest = CGRectMake(0.25, 0.25, 0.5, 0.5);
     
@@ -172,6 +195,30 @@
     
     [self updateUI];
 }
+
+//My Additional UI Functions
+//code from: http://stackoverflow.com/questions/6952755/how-to-create-a-round-button/6954024#6954024
+- (UIButton*)makeCircularButton:(UIButton*)abutton withImage:(NSString*)imName atXLoc:(NSInteger)xLoc atYLoc:(NSInteger)yLoc {
+	abutton = [UIButton buttonWithType:UIButtonTypeCustom];
+	[abutton setImage:[UIImage imageNamed:imName] forState:UIControlStateNormal];
+	abutton.frame = CGRectMake(xLoc, yLoc, ROUND_BUTTON_RADIUS, ROUND_BUTTON_RADIUS);
+	abutton.clipsToBounds = YES;
+	abutton.layer.cornerRadius = ROUND_BUTTON_RADIUS/2.0f;
+	abutton.layer.borderColor = self.border_color.CGColor;
+	abutton.layer.borderWidth = 2.0f;
+	return abutton;
+}
+
+- (void)goToScanOverview:(UIButton*)tappedButton{
+	//NSLog(@"goToSelectPatient Method Called");
+	
+	ScanOverViewController *scanView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ScanOverView"];
+	
+	scanView.prev_view = self.prev_view;
+	[self.navigationController pushViewController:scanView animated:YES];
+}
+
+//End Additional UI Functions
 
 - (IBAction) switchPalette:(UIButton *)button {
     NSInteger paletteIndex = [[[FLIROneSDKPalette palettes] allValues] indexOfObject:self.palette];

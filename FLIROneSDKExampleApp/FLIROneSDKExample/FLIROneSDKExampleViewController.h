@@ -13,6 +13,10 @@
 //#import <FlirOneFramework/FLIROne.h>
 
 @interface FLIROneSDKExampleViewController : UIViewController <FLIROneSDKImageReceiverDelegate, FLIROneSDKStreamManagerDelegate, FLIROneSDKVideoRendererDelegate, FLIROneSDKImageEditorDelegate>
+
+@property (nonatomic, retain) NSString *chosen_scan_mode;
+@property (nonatomic, retain) NSString *prev_view;
+
 //@interface FLIROneSDKExampleViewController : UIViewController <FLIROneDeviceDelegate>
 
 @end

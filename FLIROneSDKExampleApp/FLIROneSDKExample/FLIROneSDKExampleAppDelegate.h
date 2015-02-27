@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FLIROneSDKExampleAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
 
 @end
