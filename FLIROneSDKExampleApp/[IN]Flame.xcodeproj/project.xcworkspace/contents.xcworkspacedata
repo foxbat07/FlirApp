@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FLIROneSDKExampleApp.xcodeproj">
+      location = "self:[IN]Flame.xcodeproj">
    </FileRef>
 </Workspace>

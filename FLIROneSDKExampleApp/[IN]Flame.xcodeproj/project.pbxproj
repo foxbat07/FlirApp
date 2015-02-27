@@ -8,9 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1004F4D31A9B1F9600C857CE /* body.png in Resources */ = {isa = PBXBuildFile; fileRef = 1004F4D21A9B1F9600C857CE /* body.png */; };
-		84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84077E5A1933464700FE98BF /* FLIROneSDK.framework */; };
+		106A17371A9F34B600B27B31 /* searchBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 106A17361A9F34B600B27B31 /* searchBar.png */; };
+		10DFB8321A9E94C6006602C5 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8311A9E94C6006602C5 /* FLIROneSDK.bundle */; };
+		10DFB8341A9E94F1006602C5 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFB8331A9E94F1006602C5 /* FLIROneSDK.framework */; };
+		10DFB8371A9E9B2F006602C5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DFB8361A9E9B2F006602C5 /* HomeViewController.m */; };
+		10DFB83A1A9E9F1B006602C5 /* SelectPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DFB8391A9E9F1B006602C5 /* SelectPatientViewController.m */; };
+		10DFB83D1A9EA003006602C5 /* ScanOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DFB83C1A9EA003006602C5 /* ScanOverViewController.m */; };
+		10DFB84C1A9EAF3B006602C5 /* newscan.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB84A1A9EAF3B006602C5 /* newscan.png */; };
+		10DFB84D1A9EAF3B006602C5 /* trial.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB84B1A9EAF3B006602C5 /* trial.png */; };
+		10DFB8511A9EB30B006602C5 /* blueGuy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8501A9EB30B006602C5 /* blueGuy2.png */; };
+		10DFB8531A9ED1AC006602C5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8521A9ED1AC006602C5 /* icon.png */; };
+		10DFB8551A9EEB1D006602C5 /* accessrecords.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8541A9EEB1D006602C5 /* accessrecords.png */; };
+		10DFB8581A9EF839006602C5 /* PatientInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DFB8571A9EF839006602C5 /* PatientInformationViewController.m */; };
+		10DFB85C1A9EFC95006602C5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB85B1A9EFC95006602C5 /* Icon-72.png */; };
+		10DFB85F1A9F02DC006602C5 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB85D1A9F02DC006602C5 /* backArrow.png */; };
+		10DFB8601A9F02DC006602C5 /* goArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB85E1A9F02DC006602C5 /* goArrow.png */; };
+		10DFB8631A9F062A006602C5 /* big_backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8611A9F062A006602C5 /* big_backArrow.png */; };
+		10DFB8641A9F062A006602C5 /* big_GoArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DFB8621A9F062A006602C5 /* big_GoArrow.png */; };
+		10DFB8671A9F0BB6006602C5 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DFB8661A9F0BB6006602C5 /* ReportViewController.m */; };
 		847EF2571963359100F4344A /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 847EF2561963359100F4344A /* libstdc++.dylib */; };
-		84C44BFC192FB14100DAD01A /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */; };
 		84F15AF31A080F5E00D5DD08 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */; };
 		84FA87B6192DCAF800713E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B5192DCAF800713E53 /* Foundation.framework */; };
 		84FA87B8192DCAF800713E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FA87B7192DCAF800713E53 /* CoreGraphics.framework */; };
@@ -40,9 +56,30 @@
 
 /* Begin PBXFileReference section */
 		1004F4D21A9B1F9600C857CE /* body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body.png; sourceTree = "<group>"; };
-		84077E5A1933464700FE98BF /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../FLIROneSDK.framework; sourceTree = "<group>"; };
+		106A17361A9F34B600B27B31 /* searchBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBar.png; sourceTree = "<group>"; };
+		10DFB8311A9E94C6006602C5 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../FLIROneSDK.bundle; sourceTree = "<group>"; };
+		10DFB8331A9E94F1006602C5 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
+		10DFB8351A9E9B2F006602C5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		10DFB8361A9E9B2F006602C5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		10DFB8381A9E9F1B006602C5 /* SelectPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPatientViewController.h; sourceTree = "<group>"; };
+		10DFB8391A9E9F1B006602C5 /* SelectPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPatientViewController.m; sourceTree = "<group>"; };
+		10DFB83B1A9EA003006602C5 /* ScanOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanOverViewController.h; sourceTree = "<group>"; };
+		10DFB83C1A9EA003006602C5 /* ScanOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanOverViewController.m; sourceTree = "<group>"; };
+		10DFB84A1A9EAF3B006602C5 /* newscan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newscan.png; sourceTree = "<group>"; };
+		10DFB84B1A9EAF3B006602C5 /* trial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trial.png; sourceTree = "<group>"; };
+		10DFB8501A9EB30B006602C5 /* blueGuy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueGuy2.png; path = ../blueGuy2.png; sourceTree = "<group>"; };
+		10DFB8521A9ED1AC006602C5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		10DFB8541A9EEB1D006602C5 /* accessrecords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessrecords.png; sourceTree = "<group>"; };
+		10DFB8561A9EF839006602C5 /* PatientInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientInformationViewController.h; sourceTree = "<group>"; };
+		10DFB8571A9EF839006602C5 /* PatientInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientInformationViewController.m; sourceTree = "<group>"; };
+		10DFB85B1A9EFC95006602C5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		10DFB85D1A9F02DC006602C5 /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backArrow.png; sourceTree = "<group>"; };
+		10DFB85E1A9F02DC006602C5 /* goArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goArrow.png; sourceTree = "<group>"; };
+		10DFB8611A9F062A006602C5 /* big_backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_backArrow.png; sourceTree = "<group>"; };
+		10DFB8621A9F062A006602C5 /* big_GoArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_GoArrow.png; sourceTree = "<group>"; };
+		10DFB8651A9F0BB6006602C5 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		10DFB8661A9F0BB6006602C5 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
 		847EF2561963359100F4344A /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../../FLIROneSDK.bundle; sourceTree = "<group>"; };
 		84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		84FA87B2192DCAF800713E53 /* FLIROneSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLIROneSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FA87B5192DCAF800713E53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,8 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DFB8341A9E94F1006602C5 /* FLIROneSDK.framework in Frameworks */,
 				84F15AF31A080F5E00D5DD08 /* AssetsLibrary.framework in Frameworks */,
-				84077E5B1933464700FE98BF /* FLIROneSDK.framework in Frameworks */,
 				847EF2571963359100F4344A /* libstdc++.dylib in Frameworks */,
 				84FA87B8192DCAF800713E53 /* CoreGraphics.framework in Frameworks */,
 				84FA87BA192DCAF800713E53 /* UIKit.framework in Frameworks */,
@@ -114,9 +151,9 @@
 		84FA87B4192DCAF800713E53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10DFB8331A9E94F1006602C5 /* FLIROneSDK.framework */,
 				84F15AF21A080F5E00D5DD08 /* AssetsLibrary.framework */,
 				847EF2561963359100F4344A /* libstdc++.dylib */,
-				84077E5A1933464700FE98BF /* FLIROneSDK.framework */,
 				84FA87B5192DCAF800713E53 /* Foundation.framework */,
 				84FA87B7192DCAF800713E53 /* CoreGraphics.framework */,
 				84FA87B9192DCAF800713E53 /* UIKit.framework */,
@@ -131,6 +168,17 @@
 				84FA87C4192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.h */,
 				84FA87C5192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m */,
 				84FA87C7192DCAF800713E53 /* Main.storyboard */,
+				106A17361A9F34B600B27B31 /* searchBar.png */,
+				10DFB8651A9F0BB6006602C5 /* ReportViewController.h */,
+				10DFB8661A9F0BB6006602C5 /* ReportViewController.m */,
+				10DFB8561A9EF839006602C5 /* PatientInformationViewController.h */,
+				10DFB8571A9EF839006602C5 /* PatientInformationViewController.m */,
+				10DFB83B1A9EA003006602C5 /* ScanOverViewController.h */,
+				10DFB83C1A9EA003006602C5 /* ScanOverViewController.m */,
+				10DFB8381A9E9F1B006602C5 /* SelectPatientViewController.h */,
+				10DFB8391A9E9F1B006602C5 /* SelectPatientViewController.m */,
+				10DFB8351A9E9B2F006602C5 /* HomeViewController.h */,
+				10DFB8361A9E9B2F006602C5 /* HomeViewController.m */,
 				84FA87CA192DCAF800713E53 /* FLIROneSDKExampleViewController.h */,
 				84FA87CB192DCAF800713E53 /* FLIROneSDKExampleViewController.m */,
 				84FA87CD192DCAF800713E53 /* Images.xcassets */,
@@ -143,8 +191,18 @@
 		84FA87BC192DCAF800713E53 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10DFB8611A9F062A006602C5 /* big_backArrow.png */,
+				10DFB8621A9F062A006602C5 /* big_GoArrow.png */,
+				10DFB85D1A9F02DC006602C5 /* backArrow.png */,
+				10DFB85E1A9F02DC006602C5 /* goArrow.png */,
+				10DFB85B1A9EFC95006602C5 /* Icon-72.png */,
+				10DFB8541A9EEB1D006602C5 /* accessrecords.png */,
+				10DFB8501A9EB30B006602C5 /* blueGuy2.png */,
+				10DFB84A1A9EAF3B006602C5 /* newscan.png */,
+				10DFB84B1A9EAF3B006602C5 /* trial.png */,
+				10DFB8311A9E94C6006602C5 /* FLIROneSDK.bundle */,
 				1004F4D21A9B1F9600C857CE /* body.png */,
-				84C44BFB192FB14100DAD01A /* FLIROneSDK.bundle */,
+				10DFB8521A9ED1AC006602C5 /* icon.png */,
 				84FA87BD192DCAF800713E53 /* FLIROneSDKExample-Info.plist */,
 				84FA87BE192DCAF800713E53 /* InfoPlist.strings */,
 				84FA87C1192DCAF800713E53 /* main.m */,
@@ -225,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */;
+			buildConfigurationList = 84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "[IN]Flame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -249,11 +307,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DFB85F1A9F02DC006602C5 /* backArrow.png in Resources */,
+				10DFB8321A9E94C6006602C5 /* FLIROneSDK.bundle in Resources */,
+				10DFB84C1A9EAF3B006602C5 /* newscan.png in Resources */,
+				10DFB8631A9F062A006602C5 /* big_backArrow.png in Resources */,
+				10DFB8531A9ED1AC006602C5 /* icon.png in Resources */,
+				10DFB85C1A9EFC95006602C5 /* Icon-72.png in Resources */,
+				10DFB8641A9F062A006602C5 /* big_GoArrow.png in Resources */,
+				10DFB8511A9EB30B006602C5 /* blueGuy2.png in Resources */,
 				84FA87CE192DCAF800713E53 /* Images.xcassets in Resources */,
 				1004F4D31A9B1F9600C857CE /* body.png in Resources */,
+				10DFB8551A9EEB1D006602C5 /* accessrecords.png in Resources */,
+				106A17371A9F34B600B27B31 /* searchBar.png in Resources */,
+				10DFB84D1A9EAF3B006602C5 /* trial.png in Resources */,
 				84FA87C0192DCAF800713E53 /* InfoPlist.strings in Resources */,
 				84FA87C9192DCAF800713E53 /* Main.storyboard in Resources */,
-				84C44BFC192FB14100DAD01A /* FLIROneSDK.bundle in Resources */,
+				10DFB8601A9F02DC006602C5 /* goArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DFB83A1A9E9F1B006602C5 /* SelectPatientViewController.m in Sources */,
+				10DFB8581A9EF839006602C5 /* PatientInformationViewController.m in Sources */,
+				10DFB83D1A9EA003006602C5 /* ScanOverViewController.m in Sources */,
 				84FA87C6192DCAF800713E53 /* FLIROneSDKExampleAppDelegate.m in Sources */,
+				10DFB8671A9F0BB6006602C5 /* ReportViewController.m in Sources */,
 				84FA87C2192DCAF800713E53 /* main.m in Sources */,
 				84FA87CC192DCAF800713E53 /* FLIROneSDKExampleViewController.m in Sources */,
+				10DFB8371A9E9B2F006602C5 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +481,7 @@
 					"/Users/admin/Desktop/VSR-iOS",
 					/Users/admin/Desktop/flironecompositeviewer/CompositeViewer,
 					"/Users/admin/git/rosebud-app-macro/rosebud-sdk/build/FLIROneSDK",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
@@ -435,6 +510,7 @@
 					"/Users/admin/Desktop/VSR-iOS",
 					/Users/admin/Desktop/flironecompositeviewer/CompositeViewer,
 					"/Users/admin/git/rosebud-app-macro/rosebud-sdk/build/FLIROneSDK",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLIROneSDKExample/FLIROneSDKExample-Prefix.pch";
@@ -493,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "FLIROneSDKExampleApp" */ = {
+		84FA87AD192DCAF800713E53 /* Build configuration list for PBXProject "[IN]Flame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FA87E2192DCAF800713E53 /* Debug */,
