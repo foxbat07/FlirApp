@@ -25,8 +25,29 @@
 //Additions to UI
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
-@property (nonatomic) UIColor *border_color;
 
+//Colors
+@property (nonatomic) UIColor *bg_color;
+@property (nonatomic) UIColor *border_color;
+@property (nonatomic) UIColor *red_border_color;
+@property (nonatomic) UIColor *transparent_color;
+
+
+//Button to Block Camera View
+@property (weak, nonatomic) IBOutlet UIButton *blockView1;
+@property (weak, nonatomic) IBOutlet UIButton *blockView2;
+@property (weak, nonatomic) IBOutlet UIButton *blockView3;
+@property (weak, nonatomic) IBOutlet UIButton *blockView4;
+@property (weak, nonatomic) IBOutlet UIButton *blockView5;
+@property (weak, nonatomic) IBOutlet UIButton *blockView6;
+@property (weak, nonatomic) IBOutlet UIButton *blockView7;
+@property (weak, nonatomic) IBOutlet UIButton *blockView8;
+@property (weak, nonatomic) IBOutlet UIButton *blockView9;
+@property (weak, nonatomic) IBOutlet UIButton *blockView10;
+@property (weak, nonatomic) IBOutlet UIButton *blockView11;
+@property (weak, nonatomic) IBOutlet UIButton *blockView12;
+
+/////////////////////////////////////////////////////////////////////////////////////////
 //The main viewfinder for the FLIR ONE
 @property (weak, nonatomic) IBOutlet UIView *masterImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *thermalImageView;
@@ -165,16 +186,98 @@
 	//My Modifications to UI Stuff
 	[self.titleLabel setText:self.chosen_scan_mode];
 	
+	self.bg_color = [[UIColor alloc] initWithRed: 0.0 green: 0.0 blue: 0.0 alpha: 1.0];
 	self.border_color = [[UIColor alloc] initWithRed: 65.0 / 255.0
 											   green: 120.0 / 255.0
 												blue: 219.0 / 255.0
 											   alpha: 1.0];
+	self.red_border_color  = [[UIColor alloc] initWithRed: 1.0 green: 0.0 blue: 0.0 alpha: 0.7];
+	self.transparent_color = [[UIColor alloc] initWithRed: 1.0 green: 1.0 blue: 1.0 alpha: 0.0];
+
+	
+	//Set Background Color
+	self.view.backgroundColor = self.bg_color;
 	
 	//Set Up the Back Button
 	self.backButton = [self makeCircularButton:self.backButton withImage:@"big_backArrow.png" atXLoc:210 atYLoc:480];
 	[self.backButton addTarget:self action:@selector(goToScanOverview:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:self.backButton];
 	
+	if([self.chosen_scan_mode isEqual: @"Scan Head"])
+	{
+		//[[myButton layer] setBorderWidth:2.0f];
+		//[[myButton layer] setBorderColor:[UIColor greenColor].CGColor];
+	}
+	if([self.chosen_scan_mode isEqual: @"Scan Right Arm"])
+	{
+		//2, 5, 8, 9
+		[self.blockView8 setBackgroundColor:self.transparent_color];
+		[[self.blockView8 layer] setBorderWidth:0.7f];
+		[[self.blockView8 layer] setBorderColor:self.red_border_color.CGColor];
+		self.blockView8.layer.zPosition = 1;
+		
+		[self.masterImageView sendSubviewToBack:self.blockView2];
+		[self.masterImageView sendSubviewToBack:self.blockView5];
+		[self.masterImageView sendSubviewToBack:self.blockView8];
+		[self.masterImageView sendSubviewToBack:self.blockView9];
+
+		[self.masterImageView bringSubviewToFront:self.blockView1];
+		[self.masterImageView bringSubviewToFront:self.blockView3];
+		[self.masterImageView bringSubviewToFront:self.blockView4];
+		[self.masterImageView bringSubviewToFront:self.blockView6];
+		[self.masterImageView bringSubviewToFront:self.blockView7];
+		[self.masterImageView bringSubviewToFront:self.blockView10];
+		[self.masterImageView bringSubviewToFront:self.blockView11];
+		[self.masterImageView bringSubviewToFront:self.blockView12];
+	}
+	if([self.chosen_scan_mode isEqual: @"Scan Left Arm"])
+	{
+		//2, 5, 8, 7
+		[self.blockView8 setBackgroundColor:self.transparent_color];
+		[[self.blockView8 layer] setBorderWidth:0.7f];
+		[[self.blockView8 layer] setBorderColor:self.red_border_color.CGColor];
+		self.blockView8.layer.zPosition = 1;
+		
+		[self.masterImageView sendSubviewToBack:self.blockView2];
+		[self.masterImageView sendSubviewToBack:self.blockView5];
+		[self.masterImageView sendSubviewToBack:self.blockView7];
+		[self.masterImageView sendSubviewToBack:self.blockView8];
+
+		[self.masterImageView bringSubviewToFront:self.blockView1];
+		[self.masterImageView bringSubviewToFront:self.blockView3];
+		[self.masterImageView bringSubviewToFront:self.blockView4];
+		[self.masterImageView bringSubviewToFront:self.blockView6];
+		[self.masterImageView bringSubviewToFront:self.blockView9];
+		[self.masterImageView bringSubviewToFront:self.blockView10];
+		[self.masterImageView bringSubviewToFront:self.blockView11];
+		[self.masterImageView bringSubviewToFront:self.blockView12];
+	}
+	if([self.chosen_scan_mode isEqual: @"Scan Right Leg"] ||
+	   [self.chosen_scan_mode isEqual: @"Scan Left Leg"])
+	{
+		//2, 5, 8, 11
+		[self.blockView8 setBackgroundColor:self.transparent_color];
+		[[self.blockView8 layer] setBorderWidth:0.7f];
+		[[self.blockView8 layer] setBorderColor:self.red_border_color.CGColor];
+		self.blockView8.layer.zPosition = 1;
+		
+		[self.masterImageView sendSubviewToBack:self.blockView2];
+		[self.masterImageView sendSubviewToBack:self.blockView5];
+		[self.masterImageView sendSubviewToBack:self.blockView8];
+		[self.masterImageView sendSubviewToBack:self.blockView11];
+
+		[self.masterImageView bringSubviewToFront:self.blockView1];
+		[self.masterImageView bringSubviewToFront:self.blockView3];
+		[self.masterImageView bringSubviewToFront:self.blockView4];
+		[self.masterImageView bringSubviewToFront:self.blockView6];
+		[self.masterImageView bringSubviewToFront:self.blockView7];
+		[self.masterImageView bringSubviewToFront:self.blockView9];
+		[self.masterImageView bringSubviewToFront:self.blockView10];
+		[self.masterImageView bringSubviewToFront:self.blockView12];
+	}
+
+	
+	///////////////////////////////////////////////////////////////////////////////////////////
     //center of screen, half width half height, offset by width/4, height/4
     self.regionOfInterest = CGRectMake(0.25, 0.25, 0.5, 0.5);
     
