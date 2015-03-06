@@ -34,10 +34,8 @@
     [super viewDidLoad];
 	
 	//Set Colors
-	self.bg_color     = [[UIColor alloc] initWithRed: 0.0
-										       green: 0.0
-											    blue: 0.0
-										       alpha: 1.0];
+	self.bg_color = [[UIColor alloc] initWithRed: 0.0 green: 0.0 blue: 0.0 alpha: 1.0];
+
 	
 	self.border_color = [[UIColor alloc] initWithRed: 65.0 / 255.0
 											   green: 120.0 / 255.0
